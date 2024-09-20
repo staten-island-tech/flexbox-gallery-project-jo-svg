@@ -12,7 +12,22 @@ nav{
     justify-content: center;
     align-items: center;
     column-gap: 70%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
 }
+nav ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    list-style-type: none;
+    
+}
+nav h1{
+    margin-left: 10rem;
+}
+
 
 .container{
     display: flex;
@@ -25,23 +40,28 @@ nav{
 }
 .card{
     width: 30%;
-    height: 35rem;
     background-color: red;
     border: 2px solid;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     margin-top: 5rem;
     overflow: hidden;
 }
 .card_img{
     width: 100%;
-    height: 30%rem;
+    height: 70%;
     object-fit: cover;
+    
+}
+.card_header{
+    position: absolute;
+    margin-left: 20px;
 }
 
+/* @media screen and (min-width: 375, min-height: 667) {
+    
+} */
 @media screen and (max-width: 1155px){
     .container{
         flex-direction: row;
