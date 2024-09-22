@@ -22,11 +22,13 @@ nav ul{
     flex-direction: row;
     column-gap: 3rem;
     list-style-type: none;
-    
 }
 nav h1{
     margin-left: 10rem;
 }
+
+
+
 .container{
     display: flex;
     width: 90vw;
@@ -38,20 +40,44 @@ nav h1{
 }
 .card{
     width: 30%;
-    background-color: red;
+    height: 40rem;
     border: 2px solid;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
     overflow: hidden;
-}
-.card_img{
-    width: 100%;
-    object-fit: cover;
+    padding-bottom: 10px;
+    position: relative;
 }
 
-@media screen and (max-width: 1155px){
+.card_img{
+    position: absolute;
+    z-index: -1;
+}
+
+.card button{
+    width: 80%;
+    height: 3rem;
+    border: none;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 3rem;
+    transform: translateX(-50%); /* Centers the element by shifting it left by half its width */
+    left: 50%;
+    text-align: left;
+    text-indent: 30px;
+}
+.card_disc{
+    position: absolute;
+    bottom: 7rem;   
+    left: 3.5rem;
+    color: white;
+    
+}
+
+
+@media screen and (max-width: 1193px){
     .container{
         flex-direction: row;
     }
@@ -76,8 +102,6 @@ nav h1{
 .card_header{
     position: absolute;
     margin-left: 20px;
-    font-size: larger;
-}
-.card_disc{
-    margin-bottom: 1.2rem;
+    margin-top: 20px;
+    font-size: 40px;
 }
