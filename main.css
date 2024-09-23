@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
 }
 
 nav{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     height: 4rem;
     background-color: red;
     display: flex;
@@ -13,19 +17,79 @@ nav{
     align-items: center;
     column-gap: 70%;
     position: sticky;
-    top: 0;
+    top: 10px;
     z-index: 999;
-    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 10px;
 }
 nav ul{
-    display: flex;
-    flex-direction: row;
-    column-gap: 3rem;
-    list-style-type: none;
+    position: absolute;
+    right: 7%;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 7px 10px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background-color: rebeccapurple;
+    transition: .5s;
+    
+}
+nav ul button{
+    border-radius: 10px;
+    border: none;
+    width: 6rem;
+    height: 2rem;
+    text-transform: uppercase;
 }
 nav h1{
-    margin-left: 10rem;
+    position: absolute;
+    left: 10%;
 }
+.checkbtn{
+    font-size: 30px;
+    position: absolute;
+    color: white;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 740px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        background-color: blue;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 60vh;
+        text-align: center;
+        transition: all 0.5s;
+        border-radius: 15px;
+    }
+    nav ul li{
+
+    }
+} 
+
+
+
+
+
 
 
 
@@ -74,6 +138,9 @@ nav h1{
     left: 3.5rem;
     color: white;
     
+}
+.card button:hover{
+    cursor: pointer;
 }
 
 
