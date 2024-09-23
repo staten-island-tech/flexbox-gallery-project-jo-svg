@@ -4,10 +4,12 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    overflow-x: hidden;
 }
 
-
+.bdy{
+    width: 100%;
+    height: 100%;
+}
 
 nav{
     width: 90%;
@@ -70,6 +72,10 @@ nav h1{
 }
 @media (max-width: 740px){
 
+    .bdy{
+        max-width: 740px;
+        overflow: hidden;
+    }
     .checkbtn{
         display: block;
         z-index: 10;
@@ -78,7 +84,7 @@ nav h1{
         position: fixed;
         background-color: blue;
         width: 100%;
-        right:100%;
+        left: 200%;
         top: 0;
         height: 37rem;
         text-align: center;
@@ -167,6 +173,14 @@ nav h1{
     }
     .card{
         width: 40%;
+    }
+} 
+@media screen and (max-width: 740px){
+    .container{
+        flex-direction: row;
+    }
+    .card{
+        width: 70%;
     }
 }
 
