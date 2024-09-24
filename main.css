@@ -22,7 +22,6 @@ body{
 }
 nav{
     width: 90%;
-    
     height: 4rem;
     background-color: red;
     display: flex;
@@ -109,6 +108,8 @@ nav h1{
     }
     nav ul li a{
         padding: 4% 45%;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
     }
     nav ul button{
         margin-top: 3rem;
@@ -139,7 +140,7 @@ nav h1{
     flex-wrap: wrap
 }
 .card{
-    width: 30%;
+    width: 26%;
 /*     set width to 23% if its 4 by 4 */
     height: 40rem;
     border: 2px solid;
@@ -215,7 +216,7 @@ nav h1{
 }
 .card button .text{
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 550;
     position: absolute;
     left: 40px;
     top: 14px;
