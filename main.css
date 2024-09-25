@@ -35,6 +35,7 @@ body{
     justify-content: center;
 }
 nav{
+    border: 1px solid white;
     width: 90%;
     height: 4rem;
     display: flex;
@@ -128,7 +129,6 @@ nav h1:hover{
         text-align: center;
         transition: all 0.5s ease;
         backdrop-filter: blur(10px);
-        box-shadow:(4px, 0, 10px, #000);
     }
     
     nav ul li{
@@ -176,7 +176,7 @@ nav h1:hover{
     width: 23%;
 /*     set width to 23% if its 4 by 4, 26% if 3 by 3*/
     height: 40rem;
-    border: 2px solid;
+    border: 1px solid white;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -188,6 +188,7 @@ nav h1:hover{
     justify-content: center;
     align-items: center;
     animation: slide-in 1s;
+    box-shadow: 10px 16px #000000;
 }
 
 .card_img{
