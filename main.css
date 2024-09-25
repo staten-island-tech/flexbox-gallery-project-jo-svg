@@ -87,8 +87,8 @@ nav ul button{
     font-weight: bold;
 }
 nav button:hover{
-    opacity: 0.6;
-    transform: scale(0.5);
+    transform: scale(1.1);
+    border-radius: 1px;
 }
 nav h1{
     position: absolute;
